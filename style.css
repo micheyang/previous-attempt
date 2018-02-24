@@ -1,23 +1,128 @@
 body {
-    background-color: #98D7A7;
-    margin: 0;
+    /* background-color: #98D7A7; */
+    /* margin: 0;
     padding: 0;
-    font-family: 'Dosis', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+    font-family: 'Dosis', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    /* opacity: 1;
+    transition: 1s opacity; */
 }
+
+/* body.fade-out {
+    opacity: 0;
+    transition: none;
+} */
+html {
+    background-color: black;
+}
+/* I want the text to fade from black to white */
+div.slide-right {
+  /* width:100%; */
+  overflow:hidden;
+  margin-top:-150px;
+}
+
+div.slide-right p {
+  animation: 2s slide-right;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+div.slide-left {
+  /* width:100%; */
+  overflow:hidden;
+  margin-top:-150px;
+}
+div.slide-left p {
+  animation: slide-left 3s;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: #00ccff;
+  /* color: #884dff; */
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 150px;
+    width: 50%;
+}
+
 div {
     width: 600px;
     margin: 5em auto;
-    padding: 50px;
-    background-color: #fff;
-    border-radius: 1em;
+    /* padding: 50px; */
+    /* background-color: #fff; */
+    /*border-radius: 1em;*/
+}
+/* img {
+    float: right;
+} */
+h1 {
+  /* padding: 25px; */
+  /* display: inline-block;
+  position: relative;
+  float: left; */
 }
 
-h1 {
-  padding: 25px;
-  display: inline-block;
-  position: relative;
-  float: left;
+#landingTitle {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.landingBody {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+}
+
+#landingLinks {
+  font-family: 'Amatic SC', cursive;
+  font-size: 15px;
 }
 
 h2 {
@@ -31,6 +136,13 @@ h2 {
   float: right;
   display: inline-block;
 */
+
+#colorstrip{
+    width: 100%; height: 300px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
 
 #myPhoto {
   width: 150px;
